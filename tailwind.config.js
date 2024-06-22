@@ -7,6 +7,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        teal: {
+          100: "#006f70",
+          200: "rgba(0, 111, 112, 0.06)",
+        },
+        "blue-gray-200": "#e2e8f0",
+
+        darkcyan: {
+          100: "#33a3a4",
+          200: "#269696",
+        },
+        "neutral-text-dark": "#2b2b2b",
+        gainsboro: "#e6e6e6",
+      },
+      fontFamily: {
+        dongle: ["var(--font-dongle)"],
+        opensans: ["var(--font-sans)"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -14,5 +32,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
