@@ -1,14 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
 import Button from "../BasicElements/Button";
-
-// Add the Footer to the bottom of your landing page and more.
-// The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
 
 const Footer = () => {
   return (
-    <footer className=" w-screen bg-teal-100 md:px-20 px-6 py-10  font-normal font-opensans text-base text-blue-gray-200 md:flex-col justify-start  gap-16 inline-flex">
-      <div className=" px-4 md:px-8 md:flex-col  h-full item-center gap-12 flex">
+    <footer className=" w-screen bg-teal-100 lg:px-20 px-6 py-10  font-normal font-opensans text-base text-blue-gray-200 md:flex-col justify-start  gap-16 inline-flex">
+      <div className=" px-4 lg:px-8 md:flex-col  h-full item-center gap-12 flex">
         <div className="self-stretch justify-start h-full px-4 md:px-8  items-start gap-16 inline-flex">
           <div className="grow shrink basis-0  justify-start items-start gap-8 flex flex-col md:flex-row">
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">

@@ -8,11 +8,11 @@ const Hero = () => {
           <h4 className=" text-teal-100 font-semibold text-2xl">
             Automate - Analyse - Accelerate
           </h4>
-          <h1 className=" text-neutral-text-dark md:w-[700px] font-bold leading-tight text-3xl md:text-5xl">
+          <h1 className=" text-neutral-text-dark lg:w-[700px] font-bold leading-tight text-3xl lg:text-5xl">
             AI-Driven Bioprocessing: Accelerate Your Journey
           </h1>
         </div>
-        <p className=" w-4/6 text-neutral-500 text-base  md:text-xl  font-normal">
+        <p className=" lg:w-4/6 text-neutral-500 text-base  md:text-xl  font-normal">
           Bioprocess development, simplified. Our AI platform automates tasks
           and empowers informed decisions, accelerating your path from bench to
           market.

@@ -14,18 +14,18 @@ const ProductFeatures = () => {
           Any Modality, Any Scale, Powered by AI
         </h3>
       </header>
-      <main className=" flex flex-col gap-6 md:gap-12">
+      <main className=" flex flex-col gap-6 lg:gap-12">
         <section className=" flex flex-col justify-center py-5 md:py-10 items-center gap-6">
           <Image className=" h-auto w-auto" src={VideoImg} />
           <Button className=" bg-teal-100 hover:bg-teal-100 text-white border-teal-100">
             <p>Request Demo</p>
           </Button>
         </section>
-        <section className=" flex flex-col justify-center gap-5 md:gap-10 items-center">
+        <section className=" flex flex-col justify-center gap-5 lg:gap-10 items-center">
           <h1 className=" text-black text-3xl md:text-5xl font-bold font-opensans">
             Core Capabilities
           </h1>
-          <ul className="flex flex-col md:flex-row gap-3 md:gap-6 p-6 md:p-12 ">
+          <ul className="flex flex-col lg:flex-row gap-3 lg:gap-6 p-6 lg:p-12 ">
             <li className=" flex flex-col justify-start p-5 gap-5 hover:border hover:rounded-md hover:border-darkcyan-100 hover:bg-teal-50 ">
               <h4 className=" font-opensans text-black text-lg  md:text-2xl font-bold">
                 BioprocessGPT
