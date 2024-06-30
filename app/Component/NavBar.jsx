@@ -8,9 +8,9 @@ const NavBar = () => {
     setActiveTab(text);
   };
   return (
-    <nav className=" flex justify-evenly gap-8">
+    <nav className=" flex justify-evenly gap-4 md:gap-8 text-xs md:text-sm">
       <Link
-        className={` font-semibold font-opensans text-sm ${
+        className={` font-semibold font-opensans  ${
           activeTab === "Home" ? "text-teal-100" : " text-black"
         }`}
         href={""}
@@ -19,7 +19,7 @@ const NavBar = () => {
         Home
       </Link>
       <Link
-        className={` font-semibold font-opensans text-sm ${
+        className={` font-semibold font-opensans  ${
           activeTab === "About Us" ? "text-teal-100" : " text-black"
         }`}
         onClick={() => activeLinkHandler("About Us")}
@@ -28,7 +28,7 @@ const NavBar = () => {
         About Us
       </Link>
       <Link
-        className={` font-semibold font-opensans text-sm ${
+        className={` font-semibold font-opensans  ${
           activeTab === "FAQs" ? "text-teal-100" : " text-black"
         }`}
         href={""}
