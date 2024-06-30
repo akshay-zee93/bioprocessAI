@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className=" navbar md:px-12 px-2 py-7  w-full border-b">
+    <header className=" navbar lg:px-12 px-2 py-7  w-full border-b">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -66,15 +66,15 @@ const Header = () => {
             </div>
           )}
         </div>
-        <p className="text-teal-100 text-3xl md:text-4xl font-dongle">
+        <p className="text-teal-100 text-3xl lg:text-4xl font-dongle">
           BioProcessAi
         </p>
       </div>
-      <div className="navbar-end flex gap-4 md:gap-8 items-center w-full">
+      <div className="navbar-end flex gap-4 lg:gap-8 items-center w-full">
         <div className="navbar-end hidden lg:flex">
           <NavBar />
         </div>
-        <div className="flex navbar-end gap-2 md:gap-4 items-center w-full md:w-auto">
+        <div className="flex navbar-end gap-2 lg:gap-4 items-center w-full lg:w-auto">
           <Button className="bg-teal-100 hover:bg-teal-100 border-teal-100 text-white">
             Go To Platform
           </Button>

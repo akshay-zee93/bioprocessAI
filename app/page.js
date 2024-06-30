@@ -18,7 +18,7 @@ export default async function Home() {
         <Header />
         <main
           style={{ backgroundImage: `url(${HeroImg.src})` }}
-          className=" p-4 md:p-16 lg:px-40 lg:pb-40 lg:pt-28   flex items-center  bg-no-repeat bg-right "
+          className=" p-4 lg:p-16 lg:px-40 lg:pb-40 lg:pt-28   flex items-center  bg-no-repeat bg-right "
         >
           <Hero />
         </main>
@@ -26,7 +26,7 @@ export default async function Home() {
       <ProductFeatures />
       <div
         style={{ backgroundImage: `url(${LockImg.src})` }}
-        className="w-full bg-center bg-no-repeat text-xl md:text-3xl   bg-slate-800 py-24 text-white flex-col justify-center items-center gap-12 inline-flex"
+        className="w-full bg-center bg-no-repeat text-xl lg:text-3xl   bg-slate-800 py-24 text-white flex-col justify-center items-center gap-12 inline-flex"
       >
         <p>Unlock the power of BioProcessAi now !</p>
         <Button className=" hover:bg-teal-100  bg-teal-100 border-teal-100 text-white ">

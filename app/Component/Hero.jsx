@@ -12,7 +12,7 @@ const Hero = () => {
             AI-Driven Bioprocessing: Accelerate Your Journey
           </h1>
         </div>
-        <p className=" lg:w-4/6 text-neutral-500 text-base  md:text-xl  font-normal">
+        <p className=" lg:w-4/6 text-neutral-500 text-base  lg:text-xl  font-normal">
           Bioprocess development, simplified. Our AI platform automates tasks
           and empowers informed decisions, accelerating your path from bench to
           market.
