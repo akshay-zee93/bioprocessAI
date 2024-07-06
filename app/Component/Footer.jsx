@@ -1,4 +1,4 @@
-import Button from "../BasicElements/Button";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
                 BioProcessAi
               </div>
             </div>
-            <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
+            {/* <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
               <div className="self-stretch  font-semibold ">Product</div>
               <div className="self-stretch  flex-col justify-start items-start gap-3 flex">
                 <div className="justify-start items-center gap-2 inline-flex">
@@ -43,9 +43,9 @@ const Footer = () => {
                   <div />
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
+            {/* <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
               <div className="self-stretch   font-semibold ">Resources</div>
               <div className="self-stretch flex-col justify-start items-start gap-3 flex">
                 <div className="justify-start items-center gap-2 inline-flex">
@@ -69,28 +69,32 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
               <div className="self-stretch   font-semibold ">Company</div>
               <div className="self-stretch flex-col justify-start items-start gap-3 flex">
                 <div className="justify-start items-center gap-2 inline-flex">
                   <div className="justify-center items-center gap-2 flex">
-                    <div className="   font-normal ">About</div>
+                    <div className="font-normal ">
+                      <Link href="/about">About</Link>
+                    </div>
                   </div>
                 </div>
                 <div className="justify-start items-center gap-2 inline-flex">
                   <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Press</div>
+                    <Link href="/contact-for-demo" className="  font-normal ">
+                      Request Demo
+                    </Link>
                   </div>
                 </div>
                 <div className="justify-start items-center gap-2 inline-flex">
                   <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Events</div>
+                    <div className="  font-normal ">Blog</div>
                   </div>
                 </div>
                 <div className="justify-start items-center gap-2 inline-flex">
                   <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Request Demo</div>
+                    <div className="  font-normal ">FAQs</div>
                   </div>
                 </div>
               </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../BasicElements/Button";
 
 const Hero = () => {
@@ -6,7 +7,7 @@ const Hero = () => {
       <div className="flex  flex-col  gap-6">
         <div className="flex flex-col gap-4">
           <h4 className=" text-teal-100 font-semibold text-2xl">
-            Automate - Analyse - Accelerate
+            Automate - Analyze - Accelerate
           </h4>
           <h1 className=" text-neutral-text-dark lg:w-[700px] font-bold leading-tight text-3xl lg:text-5xl">
             AI-Driven Bioprocessing: Accelerate Your Journey
@@ -22,9 +23,12 @@ const Hero = () => {
         <Button className="text-base text-white hover:bg-teal-100 border-teal-100 bg-teal-100">
           <p>Get Started</p>
         </Button>
-        <Button className="text-base bg-white hover:bg-white text-teal-100 border-teal-100">
-          <p>Check Demo</p>
-        </Button>
+        <Link
+          href="/contact-for-demo"
+          className="text-base bg-white btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12  px-2  rounded-sm font-opensans lg:text-sm font-semibold hover:bg-white text-teal-100 border-teal-100"
+        >
+          <p>Request Demo</p>
+        </Link>
       </div>
     </section>
   );

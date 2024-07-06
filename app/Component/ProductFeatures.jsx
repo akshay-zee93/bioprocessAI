@@ -2,13 +2,15 @@ import Image from "next/image";
 import VideoImg from "../../public/Videodemo.svg";
 import Button from "../BasicElements/Button";
 import PartnersImg from "../../public/partners.svg";
+import Testimonials3 from "./Testimonial";
+import Link from "next/link";
 
 const ProductFeatures = () => {
   return (
     <article className=" w-full font-opensans bg-white pt-12 lg:pt-24 ">
       <header className=" flex flex-col gap-2 items-center ">
         <h1 className=" font-opensans text-black font-bold text-center text-2xl lg:text-5xl">
-          Unleash the Power of Bioprocessing
+          Unleash the Power of BioprocessAI
         </h1>
         <h3 className=" text-neutral-500  font-opensans font-normal text-lg lg:text-3xl">
           Any Modality, Any Scale, Powered by AI
@@ -17,9 +19,13 @@ const ProductFeatures = () => {
       <main className=" flex flex-col gap-6 lg:gap-12">
         <section className=" flex flex-col justify-center py-5 lg:py-10 items-center gap-6">
           <Image className=" h-auto w-auto" src={VideoImg} />
-          <Button className=" bg-teal-100 hover:bg-teal-100 text-white border-teal-100">
+
+          <Link
+            href="/contact-for-demo"
+            className="text-base btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12  px-2  rounded-sm font-opensans lg:text-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
+          >
             <p>Request Demo</p>
-          </Button>
+          </Link>
         </section>
         <section className=" flex flex-col justify-center gap-5 lg:gap-10 items-center">
           <h1 className=" text-black text-3xl lg:text-5xl font-bold font-opensans">
@@ -81,7 +87,8 @@ const ProductFeatures = () => {
           </ul>
         </section>
         <figure className=" w-full flex justify-center">
-          <Image src={PartnersImg} alt="brands" />
+          {/* <Image src={PartnersImg} alt="brands" /> */}
+          <Testimonials3 />
         </figure>
       </main>
     </article>

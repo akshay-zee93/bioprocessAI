@@ -7,6 +7,7 @@ import HeroImg from "../public/HeroImage.svg";
 import Hero from "./Component/Hero";
 import ProductFeatures from "./Component/ProductFeatures";
 import Header from "./Component/Header";
+import Link from "next/link";
 
 export default async function Home() {
   return (
@@ -29,9 +30,12 @@ export default async function Home() {
         className="w-full bg-center bg-no-repeat text-xl lg:text-3xl   bg-slate-800 py-24 text-white flex-col justify-center items-center gap-12 inline-flex"
       >
         <p>Unlock the power of BioProcessAi now !</p>
-        <Button className=" hover:bg-teal-100  bg-teal-100 border-teal-100 text-white ">
+        <Link
+          href="/contact-us"
+          className=" hover:bg-teal-100  bg-teal-100 btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm font-opensans lg:text-sm font-semibold border-teal-100 text-white "
+        >
           <p>Contact Us</p>
-        </Button>
+        </Link>
       </div>
       <Footer />
     </div>

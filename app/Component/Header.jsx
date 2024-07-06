@@ -2,6 +2,7 @@
 import { useState } from "react";
 import NavBar from "./NavBar";
 import Button from "../BasicElements/Button";
+import Link from "next/link";
 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -75,12 +76,18 @@ const Header = () => {
           <NavBar />
         </div>
         <div className="flex navbar-end gap-2 lg:gap-4 items-center w-full lg:w-auto">
-          <Button className="bg-teal-100 hover:bg-teal-100 border-teal-100 text-white">
-            Go To Platform
-          </Button>
-          <Button className="text-teal-100 border-teal-100 hover:bg-white bg-white">
+          <Link
+            href="/go-to-platform"
+            className="bg-teal-100 hover:bg-teal-100 border-teal-100 text-white btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm font-opensans lg:text-sm font-semibold"
+          >
+            Platform
+          </Link>
+          <Link
+            className="btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm font-opensans lg:text-sm font-semibold text-teal-100 border-teal-100 hover:bg-white bg-white"
+            href="/contact-us"
+          >
             Contact Us
-          </Button>
+          </Link>
         </div>
       </div>
     </header>
