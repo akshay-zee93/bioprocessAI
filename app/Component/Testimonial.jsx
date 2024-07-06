@@ -76,7 +76,7 @@ const Testimonials3 = () => {
 
         <ul className=" flex flex-wrap  gap-3 px-2">
           {[...Array(list.length)].map((e, i) => (
-            <Testimonial i={i} />
+            <Testimonial key={i} i={i} />
           ))}
         </ul>
       </div>
