@@ -31,11 +31,11 @@ const Testimonial = ({ i }) => {
         flexBasis: "calc(33.33% - 12px)",
         boxSizing: "border-box",
       }}
-      className=" shrink basis-0  bg-white rounded-lg shadow border border-white items-start flex"
+      className=" grow md:grow-0 shrink basis-0  bg-white rounded-lg shadow border border-white items-start flex"
     >
       <div className=" p-6 h-full bg-white rounded-lg flex-col justify-between items-start gap-5 flex">
         <div className="self-stretch  flex-col justify-start items-start gap-3 flex">
-          <div className=" text-neutral-500 text-sm font-medium ">
+          <div className=" text-neutral-500 text-xs md:text-sm font-medium ">
             {testimonial.text}
           </div>
         </div>
@@ -54,7 +54,7 @@ const Testimonial = ({ i }) => {
             </span>
           )}
           <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
-            <div className=" text-neutral-700 text-base font-semibold ">
+            <div className=" text-neutral-700 text-sm lg:text-base font-semibold ">
               {testimonial.name}
             </div>
           </div>
@@ -69,7 +69,7 @@ const Testimonials3 = () => {
     <div className="w-full py-20 px-10 bg-slate-100 flex-col justify-start items-center inline-flex">
       <div className="  flex-col  justify-start items-center gap-16 flex">
         <div className="  flex-col  justify-start items-center gap-4 flex">
-          <div className=" text-center text-neutral-700 text-2xl font-semibold ">
+          <div className=" text-center text-neutral-700 text-lg md:text-2xl font-semibold ">
             Trusted Company over 1,0000 business rely on Humanet
           </div>
         </div>

@@ -43,7 +43,9 @@ const ContactUs = ({ title, displayAllFields = false }) => {
       style={{ backgroundImage: `url(${BackgroundImg.src})` }}
       className="flex flex-col gap-9  justify-center items-center min-h-screen  w-screen bg-cover  bg-no-repeat bg-top"
     >
-      <h1 className="text-5xl font-semibold text-black mb-4">{title}</h1>
+      <h1 className=" text-2xl md:text-5xl font-semibold text-black mb-4">
+        {title}
+      </h1>
 
       <form
         onSubmit={handleSubmit(onSubmit)}

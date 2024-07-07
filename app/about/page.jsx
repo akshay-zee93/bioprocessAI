@@ -6,15 +6,15 @@ const page = () => {
   return (
     <article
       style={{ backgroundImage: `url(${BackgroundImg.src})` }}
-      className=" w-screen bg-cover  bg-no-repeat bg-top justify-between min-h-dvh  flex flex-col md:flex-row p-10  md:py-48 md:px-20   text-black   gap-20 "
+      className=" w-screen bg-cover  bg-no-repeat bg-top lg:justify-between min-h-dvh  flex flex-col lg:flex-row p-10  lg:py-48 lg:px-10   text-black gap-8  "
     >
       <Image src={PlaceholderImg} priority alt="image" className=" md:w-1/2 " />
-      <section className=" flex flex-col h-full w-full gap-8">
-        <header className=" flex text-3xl flex-col">
+      <section className=" flex flex-col h-full w-full gap-3 lg:gap-8">
+        <header className=" flex text-xl md:text-3xl flex-col">
           <h3 className="  font-semibold">Samir Varma</h3>
           <h3 className=" text-gray-500 italic">Co Founder</h3>
         </header>
-        <main className="flex flex-col max-w-2xl h-full gap-5">
+        <main className="flex flex-col max-w-2xl text-sm md:text-base h-full gap-5">
           <p>
             Samir has extensive experience in the Biotech industry working at
             various large and small pharma and biotech companies including
