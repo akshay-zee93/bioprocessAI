@@ -27,34 +27,28 @@ const Testimonial = ({ i }) => {
   return (
     <li
       key={i}
-      style={{
-        flexBasis: "calc(33.33% - 12px)",
-        boxSizing: "border-box",
-      }}
-      className=" grow md:grow-0 shrink basis-0  bg-white rounded-lg shadow border border-white items-start flex"
+      className="inline-block m-2 p-4 bg-white shadow-md rounded-lg w-full h-full md:w-1/2 lg:w-2/5"
     >
-      <div className=" p-6 h-full bg-white rounded-lg flex-col justify-between items-start gap-5 flex">
-        <div className="self-stretch  flex-col justify-start items-start gap-3 flex">
-          <div className=" text-neutral-500 text-xs md:text-sm font-medium ">
-            {testimonial.text}
-          </div>
+      <div className="flex flex-col justify-between h-full p-6 gap-4 bg-white rounded-lg">
+        <div className="text-neutral-500 text-wrap break-words text-xs lg:text-sm font-medium">
+          {testimonial.text}
         </div>
-        <div className="self-stretch justify-start items-center gap-3.5 inline-flex">
+        <div className="flex gap-4 items-center">
           {testimonial.img ? (
             <Image
               className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
-              src={list[i].img}
-              alt={`${list[i].name}'s testimonial `}
+              src={testimonial.img}
+              alt={`${testimonial.name}'s testimonial`}
               width={48}
               height={48}
             />
           ) : (
-            <span className="w-10 h-10 md:w-12 md:h-12 rounded-full flex justify-center items-center text-lg font-medium bg-base-300">
+            <span className=" w-12 h-12 rounded-full flex justify-center items-center text-base lg:text-lg font-medium bg-base-300">
               {testimonial.name.charAt(0)}
             </span>
           )}
-          <div className="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
-            <div className=" text-neutral-700 text-sm lg:text-base font-semibold ">
+          <div className="flex flex-col justify-start text-wrap w-3/4 items-start gap-2">
+            <div className="text-neutral-700 text-left break-words text-sm lg:text-base font-semibold">
               {testimonial.name}
             </div>
           </div>
@@ -66,21 +60,11 @@ const Testimonial = ({ i }) => {
 
 const Testimonials3 = () => {
   return (
-    <div className="w-full py-20 px-10 bg-slate-100 flex-col justify-start items-center inline-flex">
-      <div className="  flex-col  justify-start items-center gap-16 flex">
-        <div className="  flex-col  justify-start items-center gap-4 flex">
-          <div className=" text-center text-neutral-700 text-lg md:text-2xl font-semibold ">
-            Trusted Company over 1,0000 business rely on Humanet
-          </div>
-        </div>
-
-        <ul className=" flex flex-wrap  gap-3 px-2">
-          {[...Array(list.length)].map((e, i) => (
-            <Testimonial key={i} i={i} />
-          ))}
-        </ul>
-      </div>
-    </div>
+    <ul className="overflow-x-auto overflow-y-hidden p-10 bg-slate-100 whitespace-nowrap ">
+      {list.map((_, i) => (
+        <Testimonial key={i} i={i} />
+      ))}
+    </ul>
   );
 };
 

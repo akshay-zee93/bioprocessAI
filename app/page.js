@@ -18,8 +18,11 @@ export default async function Home() {
       >
         <Header />
         <main
-          style={{ backgroundImage: `url(${HeroImg.src})` }}
-          className=" p-4 lg:p-16 lg:px-40 lg:pb-40 lg:pt-28   flex items-center  bg-no-repeat bg-right "
+          style={{
+            backgroundImage: `url(${HeroImg.src})`,
+            backgroundSize: "contain",
+          }}
+          className=" p-4  md:py-24 md:pl-28  bg-cover  flex items-center  bg-no-repeat bg-right "
         >
           <Hero />
         </main>
@@ -27,7 +30,7 @@ export default async function Home() {
       <ProductFeatures />
       <div
         style={{ backgroundImage: `url(${LockImg.src})` }}
-        className="w-full bg-center bg-no-repeat text-xl lg:text-3xl   bg-slate-800 py-24 text-white flex-col justify-center items-center gap-12 inline-flex"
+        className="w-full bg-center bg-no-repeat text-xl lg:text-3xl   bg-slate-800 py-10 text-white flex-col justify-center items-center gap-12 inline-flex"
       >
         <p>Unlock the power of BioProcessAi now !</p>
         <Link

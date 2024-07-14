@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className=" w-screen bg-teal-100 lg:px-20 px-6 py-10  font-normal font-opensans text-base text-blue-gray-200 lg:flex-col justify-start  gap-16 inline-flex">
-      <div className=" px-4 lg:px-8 lg:flex-col  h-full item-center gap-12 flex">
+    <footer className=" w-screen bg-teal-100 lg:px-20 px-6 py-10  font-normal font-opensans text-base text-blue-gray-200 flex-col justify-start  gap-16 inline-flex">
+      <div className="  flex-col  h-full item-center gap-12 flex">
         <div className="self-stretch justify-start h-full px-4 lg:px-8  items-start gap-16 inline-flex">
-          <div className="grow shrink basis-0 justify-center  gap-8 flex flex-col lg:flex-row">
+          <div className="grow shrink basis-0 justify-center  gap-8 flex ">
             <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
               <div className="self-stretch text-white text-3xl lg:text-5xl font-dongle ">
                 BioProcessAi

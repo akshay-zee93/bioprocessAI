@@ -6,14 +6,14 @@ const Hero = () => {
     <section className="flex flex-col font-opensans gap-10">
       <div className="flex  flex-col  gap-6">
         <div className="flex flex-col gap-4">
-          <h4 className=" text-teal-100 font-semibold text-2xl">
+          <h4 className=" text-teal-100 font-semibold text-lg lg:text-2xl">
             Automate - Analyze - Accelerate
           </h4>
-          <h1 className=" text-neutral-text-dark lg:w-[700px] font-bold leading-tight text-3xl lg:text-5xl">
+          <h1 className=" text-neutral-text-dark md:w-3/5 font-bold leading-tight text-2xl lg:text-4xl xl:text-5xl">
             AI-Driven Bioprocessing: Accelerate Your Journey
           </h1>
         </div>
-        <p className=" lg:w-4/6 text-neutral-500 text-base  lg:text-xl  font-normal">
+        <p className=" w-3/4 lg:w-4/6 text-neutral-500 text-sm  lg:text-xl  font-normal">
           Bioprocess development, simplified. Our AI platform automates tasks
           and empowers informed decisions, accelerating your path from bench to
           market.

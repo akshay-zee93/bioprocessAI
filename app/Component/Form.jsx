@@ -4,8 +4,12 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import BackgroundImg from "../../public/Background.svg";
+import { contactDetails } from "../actions/contactusActions";
+import { useRouter } from "next/navigation";
+import { demoDetails } from "../actions/demoAction";
 
 const ContactUs = ({ title, displayAllFields = false }) => {
+  const route = useRouter();
   const baseSchema = {
     name: z.string().min(1, { message: "Name is required" }),
     email: z.string().email({ message: "Invalid email address" }),
@@ -34,8 +38,18 @@ const ContactUs = ({ title, displayAllFields = false }) => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    if (displayAllFields) {
+      const status = await contactDetails(data);
+      if (status === 201) {
+        route.push("/");
+      }
+    } else {
+      const status = await demoDetails(data);
+      if (status === 201) {
+        route.push("/");
+      }
+    }
   };
 
   return (

@@ -77,7 +77,8 @@ const Header = () => {
         </div>
         <div className="flex navbar-end gap-2 lg:gap-4 items-center w-full lg:w-auto">
           <Link
-            href="/go-to-platform"
+            href="https://www.bioprocessai.com/bioprocessaiplatform"
+            target="blank"
             className="bg-teal-100 hover:bg-teal-100 border-teal-100 text-white btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm font-opensans lg:text-sm font-semibold"
           >
             Platform

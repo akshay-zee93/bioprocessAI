@@ -1,6 +1,6 @@
-const EmailTemplate = ({ firstName }) => (
+const EmailTemplate = ({ data }) => (
   <div>
-    <p>Hello {firstName}</p>
+    <p>Contact Details {JSON.stringify(data)}</p>
   </div>
 );
 export default EmailTemplate;
