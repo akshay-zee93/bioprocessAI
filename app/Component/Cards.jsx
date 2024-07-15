@@ -10,7 +10,7 @@ const Cards = ({ data }) => {
     youtube = "",
   } = data;
   return (
-    <div className="card w-80 md:w-96 bg-white shadow-xl">
+    <div className="card w-72 md:w-96 bg-white shadow-xl">
       <figure className="px-5 pt-10">
         <img
           src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
