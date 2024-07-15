@@ -2,137 +2,50 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className=" w-screen bg-teal-100 lg:px-20 px-6 py-10  font-normal font-opensans text-base text-blue-gray-200 flex-col justify-start  gap-16 inline-flex">
-      <div className="  flex-col  h-full item-center gap-12 flex">
-        <div className="self-stretch justify-start h-full px-4 lg:px-8  items-start gap-16 inline-flex">
-          <div className="grow shrink basis-0 justify-center  gap-8 flex ">
-            <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
-              <div className="self-stretch text-white text-3xl lg:text-5xl font-dongle ">
-                BioProcessAi
-              </div>
-            </div>
-            {/* <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
-              <div className="self-stretch  font-semibold ">Product</div>
-              <div className="self-stretch  flex-col justify-start items-start gap-3 flex">
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Pricing</div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Overview</div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Browse</div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="font-normal flex gap-2 items-center ">
-                      <p>Accessibilty</p>{" "}
-                      <Button className="bg-white border-0 hover:bg-white text-purple-800 rounded-md text lg:h-6 lg:min-h-6">
-                        <p className=" text-xs">BETA</p>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div />
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
-              <div className="self-stretch   font-semibold ">Resources</div>
-              <div className="self-stretch flex-col justify-start items-start gap-3 flex">
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Help Center</div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Blog</div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">Tutorials</div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  font-normal ">FAQs</div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
-              <div className="self-stretch   font-semibold ">Company</div>
-              <div className="self-stretch flex-col justify-start items-start gap-3 flex">
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <Link className="link link-hover" href="/about">
-                      About
-                    </Link>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <Link
-                      href="/contact-for-demo"
-                      className=" link link-hover "
-                    >
-                      Request Demo
-                    </Link>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <div className="  link link-hover ">Blog</div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <Link href="" className=" link link-hover ">
-                      FAQs
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="grow shrink basis-0 flex-col justify-start items-start gap-4 inline-flex">
-              <div className="self-stretch   font-semibold ">Legal</div>
-              <div className="self-stretch h-24 flex-col justify-start items-start gap-3 flex">
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <Link href="" className=" link link-hover ">
-                      Terms
-                    </Link>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <Link href="" className=" link link-hover ">
-                      Privacy
-                    </Link>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-2 inline-flex">
-                  <div className="justify-center items-center gap-2 flex">
-                    <Link href="" className=" link link-hover ">
-                      Cookies Policy
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer className="footer bg-teal-100  text-blue-gray-200 p-10">
+      <aside>
+        {/* <svg
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          className="fill-current"
+        >
+          <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+        </svg> */}
+        <p className="text-white text-3xl lg:text-5xl font-dongle">
+          BioProcessAi
+        </p>
+      </aside>
+      <nav>
+        <h6 className="footer-title">Company</h6>
+        <Link className="link link-hover" href="/about">
+          About
+        </Link>
+        <Link href="/contact-for-demo" className=" link link-hover ">
+          Request Demo
+        </Link>
+        <Link href="" className="link link-hover">
+          Blogs
+        </Link>
+        <Link href="" className=" link link-hover ">
+          FAQs
+        </Link>
+      </nav>
+      <nav>
+        <h6 className="footer-title">Legal</h6>
+        <Link href="" className="link link-hover">
+          Terms of use
+        </Link>
+        <Link href="" className="link link-hover">
+          Privacy policy
+        </Link>
+        <Link href="" className="link link-hover">
+          Cookie policy
+        </Link>
+      </nav>
     </footer>
   );
 };

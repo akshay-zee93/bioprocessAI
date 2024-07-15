@@ -1,6 +1,5 @@
 import Image from "next/image";
 import VideoImg from "../../public/Videodemo.svg";
-import Testimonials3 from "./Testimonial";
 import Link from "next/link";
 
 const ProductFeatures = () => {
@@ -84,9 +83,6 @@ const ProductFeatures = () => {
             </li>
           </ul>
         </section>
-        <figure className=" w-full flex justify-center">
-          <Testimonials3 />
-        </figure>
       </main>
     </article>
   );

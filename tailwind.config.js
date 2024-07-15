@@ -18,8 +18,6 @@ module.exports = {
           100: "#33a3a4",
           200: "#269696",
         },
-        "neutral-text-dark": "#2b2b2b",
-        gainsboro: "#e6e6e6",
       },
       fontFamily: {
         dongle: ["var(--font-dongle)"],

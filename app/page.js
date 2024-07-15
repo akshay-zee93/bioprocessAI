@@ -1,13 +1,14 @@
 import Footer from "./Component/Footer";
-import Button from "./BasicElements/Button";
 import LockImg from "../public/Lock.svg";
 import BackgroundImg from "../public/Background.svg";
 import HeroImg from "../public/HeroImage.svg";
+import Teams from "./Component/Teams";
 
 import Hero from "./Component/Hero";
 import ProductFeatures from "./Component/ProductFeatures";
 import Header from "./Component/Header";
 import Link from "next/link";
+import Testimonials from "./Component/Testimonial";
 
 export default async function Home() {
   return (
@@ -28,6 +29,12 @@ export default async function Home() {
         </main>
       </section>
       <ProductFeatures />
+      <section className=" px-10 py-10 bg-slate-100">
+        <Teams />
+      </section>
+      <section className="px-5 py-10 bg-slate-100">
+        <Testimonials />
+      </section>
       <div
         style={{ backgroundImage: `url(${LockImg.src})` }}
         className="w-full bg-center bg-no-repeat text-xl lg:text-3xl   bg-slate-800 py-10 text-white flex-col justify-center items-center gap-12 inline-flex"
