@@ -1,16 +1,16 @@
-import Cards from "../Component/Cards";
+import Cards from "./Cards";
 import { teamsList } from "../utils/stringConstants";
-import Carousal from "../Component/Carousal";
+import Carousal from "./Carousal";
 
-const Teams = () => {
+const Team = () => {
   return (
     <>
       <h2 className="text-black text-3xl lg:text-5xl font-bold font-opensans text-center">
-        Teams
+        Our Team
       </h2>
       <Carousal itemList={teamsList} Component={Cards} />
     </>
   );
 };
 
-export default Teams;
+export default Team;

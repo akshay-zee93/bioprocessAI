@@ -2,7 +2,7 @@ import Footer from "./Component/Footer";
 import LockImg from "../public/Lock.svg";
 import BackgroundImg from "../public/Background.svg";
 import HeroImg from "../public/HeroImage.svg";
-import Teams from "./Component/Teams";
+import Teams from "./Component/Team";
 
 import Hero from "./Component/Hero";
 import ProductFeatures from "./Component/ProductFeatures";
