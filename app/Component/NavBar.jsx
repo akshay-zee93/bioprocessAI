@@ -13,7 +13,7 @@ const NavBar = () => {
         className={` font-semibold font-opensans  ${
           activeTab === "Home" ? "text-teal-100" : " text-black"
         }`}
-        href={""}
+        href={"/"}
         onClick={() => activeLinkHandler("Home")}
       >
         Home
@@ -23,7 +23,7 @@ const NavBar = () => {
           activeTab === "About Us" ? "text-teal-100" : " text-black"
         }`}
         onClick={() => activeLinkHandler("About Us")}
-        href={""}
+        href={"/about"}
       >
         About Us
       </Link>
