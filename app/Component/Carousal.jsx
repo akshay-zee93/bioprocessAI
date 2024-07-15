@@ -48,7 +48,7 @@ const Carousal = ({ itemList, Component }) => {
     }
   };
   return (
-    <div className="bg-slate-100">
+    <div className="">
       <div className="flex justify-between items-center">
         <button
           onClick={handlePrevious}

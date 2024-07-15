@@ -12,7 +12,7 @@ import Testimonials from "./Component/Testimonial";
 
 export default async function Home() {
   return (
-    <div className=" w-screen box-border h-screen">
+    <div className=" w-screen box-border  h-screen">
       <section
         style={{ backgroundImage: `url(${BackgroundImg.src})` }}
         className=" w-screen bg-cover bg-no-repeat bg-top "
@@ -23,16 +23,16 @@ export default async function Home() {
             backgroundImage: `url(${HeroImg.src})`,
             backgroundSize: "contain",
           }}
-          className=" p-4  md:py-24 md:pl-28  bg-cover  flex items-center  bg-no-repeat bg-right "
+          className=" p-4  md:py-24 md:pl-28  bg-cover   flex items-center  bg-no-repeat bg-right "
         >
           <Hero />
         </main>
       </section>
       <ProductFeatures />
-      <section className=" px-10 py-10 bg-slate-100">
+      <section className=" px-2 md:px-10 py-10 bg-slate-100">
         <Teams />
       </section>
-      <section className="px-5 py-10 bg-slate-100">
+      <section className=" px-2 md:px-5 py-10 bg-slate-200">
         <Testimonials />
       </section>
       <div
