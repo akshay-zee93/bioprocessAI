@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className=" flex flex-col lg:flex-row justify-evenly gap-4 lg:gap-8 text-xs lg:text-sm menu menu-horizontal px-1">
       <Link
-        className={` font-semibold font-opensans  ${
+        className={` font-semibold   ${
           activeTab === "Home" ? "text-teal-100" : " text-black"
         }`}
         href={"/"}
@@ -19,7 +19,7 @@ const NavBar = () => {
         Home
       </Link>
       <Link
-        className={` font-semibold font-opensans  ${
+        className={` font-semibold   ${
           activeTab === "About Us" ? "text-teal-100" : " text-black"
         }`}
         onClick={() => activeLinkHandler("About Us")}
@@ -28,7 +28,7 @@ const NavBar = () => {
         About Us
       </Link>
       <Link
-        className={` font-semibold font-opensans  ${
+        className={` font-semibold   ${
           activeTab === "FAQs" ? "text-teal-100" : " text-black"
         }`}
         href={""}

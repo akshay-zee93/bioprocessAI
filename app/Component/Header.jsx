@@ -98,12 +98,12 @@ const Header = () => {
           <Link
             href="https://www.bioprocessai.com/bioprocessaiplatform"
             target="_blank"
-            className="bg-teal-100 hover:bg-teal-100 border-teal-100 text-white btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2 rounded-sm font-opensans lg:text-sm font-semibold"
+            className="bg-teal-100 hover:bg-teal-100 border-teal-100 text-white btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2 rounded-sm  lg:text-sm font-semibold"
           >
             Platform
           </Link>
           <Link
-            className="btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2 rounded-sm font-opensans lg:text-sm font-semibold text-teal-100 border-teal-100 hover:bg-white bg-white"
+            className="btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2 rounded-sm  lg:text-sm font-semibold text-teal-100 border-teal-100 hover:bg-white bg-white"
             href="/contact-us"
           >
             Contact Us

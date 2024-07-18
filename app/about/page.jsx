@@ -1,15 +1,18 @@
-import Image from "next/image";
 import BackgroundImg from "../../public/Background.svg";
-import PlaceholderImg from "../../public/placeholder.jpg";
+import Teams from "../Component/Team";
+import Advisors from "../Component/Advisors";
+import Careers from "../Component/Careers";
 
 const page = () => {
   return (
     <article
       style={{ backgroundImage: `url(${BackgroundImg.src})` }}
-      className=" w-screen bg-cover  bg-no-repeat bg-top lg:justify-between min-h-dvh  flex flex-col lg:flex-row p-10  lg:py-48 lg:px-10   text-black gap-8  "
+      className=" w-screen bg-cover  bg-no-repeat bg-top  min-h-dvh  flex flex-col px-10  text-black gap-8  "
     >
-      <Image src={PlaceholderImg} priority alt="image" className=" md:w-1/2 " />
-      <section className=" flex flex-col h-full w-full gap-3 lg:gap-8">
+      <h1 className="text-black text-center text-3xl lg:text-5xl font-bold py-10">
+        About BioProcessAi
+      </h1>
+      {/* <section className=" flex flex-col h-full w-full gap-3 lg:gap-8">
         <header className=" flex text-xl md:text-3xl flex-col">
           <h3 className="  font-semibold">Samir Varma</h3>
           <h3 className=" text-gray-500 italic">Co Founder</h3>
@@ -32,6 +35,15 @@ const page = () => {
             University, New York, NY.
           </p>
         </main>
+      </section> */}
+      <section className=" px-2 md:px-10 py-10 bg-slate-100">
+        <Teams />
+      </section>
+      <section className=" px-2 md:px-10 py-10 bg-slate-100">
+        <Advisors />
+      </section>
+      <section className=" px-2 md:px-10 py-10 bg-slate-100">
+        <Careers />
       </section>
     </article>
   );

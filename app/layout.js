@@ -1,4 +1,4 @@
-import { Dongle, Open_Sans } from "next/font/google";
+import { Dongle, Poppins } from "next/font/google";
 import "./globals.css";
 
 const dongle = Dongle({
@@ -6,10 +6,10 @@ const dongle = Dongle({
   subsets: ["latin"],
   variable: "--font-dongle",
 });
-const sans = Open_Sans({
+const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-poppins",
 });
 export const metadata = {
   title: "Create Next App",
@@ -19,7 +19,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${dongle.variable} ${sans.variable}`}>{children}</body>
+      <body className={`${poppins.className} ${dongle.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

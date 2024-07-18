@@ -21,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
         dongle: ["var(--font-dongle)"],
-        opensans: ["var(--font-sans)"],
+        poppins: ["var(--font-poppins)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

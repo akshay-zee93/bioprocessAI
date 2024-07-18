@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const ProductFeatures = () => {
   return (
-    <article className=" w-full font-opensans bg-white pt-12 lg:pt-24 ">
+    <article className=" w-full  bg-white pt-12 lg:pt-24 ">
       <header className=" flex flex-col gap-2 items-center ">
-        <h1 className=" font-opensans text-black font-bold text-center text-2xl lg:text-5xl">
+        <h1 className="  text-black font-bold text-center text-2xl lg:text-5xl">
           Unleash the Power of BioprocessAI
         </h1>
-        <h3 className=" text-neutral-500  font-opensans font-normal text-lg lg:text-3xl">
+        <h3 className=" text-neutral-500   font-normal text-lg lg:text-3xl">
           Any Modality, Any Scale, Powered by AI
         </h3>
       </header>
@@ -19,21 +19,21 @@ const ProductFeatures = () => {
 
           <Link
             href="/contact-for-demo"
-            className="text-base btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12  px-2  rounded-sm font-opensans lg:text-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
+            className="text-base btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12  px-2  rounded-sm  lg:text-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
           >
             <p>Request Demo</p>
           </Link>
         </section>
         <section className=" flex flex-col justify-center gap-5 lg:gap-10 items-center">
-          <h1 className=" text-black text-3xl lg:text-5xl font-bold font-opensans">
+          <h1 className=" text-black text-3xl lg:text-5xl font-bold ">
             Core Capabilities
           </h1>
           <ul className="flex flex-col lg:flex-row gap-3 lg:gap-6 p-6 lg:p-12 ">
             <li className=" flex flex-col justify-start p-5 gap-5 hover:border hover:rounded-md hover:border-darkcyan-100 hover:bg-teal-50 ">
-              <h4 className=" font-opensans text-black text-lg  lg:text-2xl font-bold">
+              <h4 className="  text-black text-lg  lg:text-2xl font-bold">
                 BioprocessGPT
               </h4>
-              <p className=" font-opensans text-neutral-500 text-base lg:text-lg font-normal">
+              <p className="  text-neutral-500 text-base lg:text-lg font-normal">
                 Leverage the power of BioprocessGPT, a ChatGPT-like interface
                 trained on comprehensive, up-to-date bioprocess knowledge. Ask
                 in-depth questions on any CMC topic and get insightful answers
@@ -43,10 +43,10 @@ const ProductFeatures = () => {
               </p>
             </li>
             <li className=" flex flex-col justify-start p-5 gap-5 hover:border hover:rounded-md hover:border-darkcyan-100 hover:bg-teal-50 ">
-              <h4 className=" font-opensans text-black  text-lg  lg:text-2xl font-bold">
+              <h4 className="  text-black  text-lg  lg:text-2xl font-bold">
                 CMC CoPilot
               </h4>
-              <p className=" font-opensans text-neutral-500 text-base lg:text-lg font-normal">
+              <p className="  text-neutral-500 text-base lg:text-lg font-normal">
                 Transform your process development, manufacturing, and
                 regulatory activities with CMC CoPilot. It actively analyzes
                 your data to guide efficient experimental design and iteration,
@@ -57,10 +57,10 @@ const ProductFeatures = () => {
               </p>
             </li>
             <li className=" flex flex-col justify-start p-5 gap-5 hover:border hover:rounded-md hover:border-darkcyan-100 hover:bg-teal-50 ">
-              <h4 className=" font-opensans text-black  text-lg  lg:text-2xl font-bold">
+              <h4 className="  text-black  text-lg  lg:text-2xl font-bold">
                 RegGuide
               </h4>
-              <p className=" font-opensans text-neutral-500 text-base lg:text-lg font-normal">
+              <p className="  text-neutral-500 text-base lg:text-lg font-normal">
                 Effortlessly generate high-quality protocols, reports, and
                 presentations for Tech Transfer, Audits, and CMC sections of
                 regulatory submissions with RegGuide. This AI-powered tool
@@ -69,10 +69,10 @@ const ProductFeatures = () => {
               </p>
             </li>
             <li className=" flex flex-col justify-start p-5 gap-5 hover:border hover:rounded-md hover:border-darkcyan-100 hover:bg-teal-50 ">
-              <h4 className=" font-opensans text-black  text-lg  lg:text-2xl font-bold">
+              <h4 className="  text-black  text-lg  lg:text-2xl font-bold">
                 Multi-Modality Support
               </h4>
-              <p className=" font-opensans text-neutral-500 text-base lg:text-lg font-normal">
+              <p className="  text-neutral-500 text-base lg:text-lg font-normal">
                 Develop cutting-edge therapies across all leading biological
                 modalities with a single platform. Bioprocess AI seamlessly
                 supports the development of mAbs, bispecific antibodies,

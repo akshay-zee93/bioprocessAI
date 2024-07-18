@@ -2,7 +2,6 @@ import Footer from "./Component/Footer";
 import LockImg from "../public/Lock.svg";
 import BackgroundImg from "../public/Background.svg";
 import HeroImg from "../public/HeroImage.svg";
-import Teams from "./Component/Team";
 
 import Hero from "./Component/Hero";
 import ProductFeatures from "./Component/ProductFeatures";
@@ -29,9 +28,7 @@ export default async function Home() {
         </main>
       </section>
       <ProductFeatures />
-      <section className=" px-2 md:px-10 py-10 bg-slate-100">
-        <Teams />
-      </section>
+
       <section className=" px-2 md:px-5 py-10 bg-slate-200">
         <Testimonials />
       </section>
@@ -42,7 +39,7 @@ export default async function Home() {
         <p>Unlock the power of BioProcessAi now !</p>
         <Link
           href="/contact-us"
-          className=" hover:bg-teal-100  bg-teal-100 btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm font-opensans lg:text-sm font-semibold border-teal-100 text-white "
+          className=" hover:bg-teal-100  bg-teal-100 btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm  lg:text-sm font-semibold border-teal-100 text-white "
         >
           <p>Contact Us</p>
         </Link>
