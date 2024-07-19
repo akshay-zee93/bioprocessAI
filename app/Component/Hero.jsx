@@ -25,7 +25,7 @@ const Hero = () => {
         </Button>
         <Link
           href="/contact-for-demo"
-          className="text-base bg-white btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12  px-2  rounded-sm  lg:text-sm font-semibold hover:bg-white text-teal-100 border-teal-100"
+          className=" btn bg-white text-teal-100 hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm hover:bg-white  lg:text-sm font-semibold"
         >
           <p>Request Demo</p>
         </Link>

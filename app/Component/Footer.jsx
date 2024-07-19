@@ -20,24 +20,24 @@ const Footer = () => {
         </p>
       </aside>
       <nav>
-        <h6 className="footer-title">Company</h6>
+        <h6 className=" mb-2 font-semibold">Company</h6>
         <Link className="link link-hover" href="/about">
           About
         </Link>
         <Link href="/contact-for-demo" className=" link link-hover ">
           Request Demo
         </Link>
-        <Link href="" className="link link-hover">
+        {/* <Link href="" className="link link-hover">
           Blogs
         </Link>
         <Link href="" className=" link link-hover ">
           FAQs
-        </Link>
+        </Link> */}
       </nav>
       <nav>
-        <h6 className="footer-title">Legal</h6>
+        <h6 className=" mb-2 font-semibold">Legal</h6>
         <Link href="" className="link link-hover">
-          Terms of use
+          Terms policy
         </Link>
         <Link href="" className="link link-hover">
           Privacy policy

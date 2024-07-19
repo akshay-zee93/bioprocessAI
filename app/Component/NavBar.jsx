@@ -8,7 +8,7 @@ const NavBar = () => {
     setActiveTab(text);
   };
   return (
-    <nav className=" flex flex-col lg:flex-row justify-evenly gap-4 lg:gap-8 text-xs lg:text-sm menu menu-horizontal px-1">
+    <nav className=" flex flex-col lg:flex-row justify-evenly menu menu-horizontal gap-4 lg:gap-8 text-xs lg:text-sm px-1">
       <Link
         className={` font-semibold   ${
           activeTab === "Home" ? "text-teal-100" : " text-black"
@@ -27,7 +27,7 @@ const NavBar = () => {
       >
         About Us
       </Link>
-      <Link
+      {/* <Link
         className={` font-semibold   ${
           activeTab === "FAQs" ? "text-teal-100" : " text-black"
         }`}
@@ -35,6 +35,25 @@ const NavBar = () => {
         onClick={() => activeLinkHandler("FAQs")}
       >
         FAQs
+      </Link> */}
+      <Link
+        href="https://www.bioprocessai.com/bioprocessaiplatform"
+        target="_blank"
+        className={` font-semibold   ${
+          activeTab === "Platform" ? "text-teal-100" : " text-black"
+        }`}
+        onClick={() => activeLinkHandler("Platform")}
+      >
+        Platform
+      </Link>
+      <Link
+        className={` font-semibold   ${
+          activeTab === "Contact" ? "text-teal-100" : " text-black"
+        }`}
+        onClick={() => activeLinkHandler("Contact")}
+        href="/contact-us"
+      >
+        Contact Us
       </Link>
     </nav>
   );

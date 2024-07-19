@@ -1,5 +1,7 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
+import UserImg from "../../public/users.jpg";
 
 const Cards = ({ data }) => {
   const {
@@ -12,9 +14,12 @@ const Cards = ({ data }) => {
   return (
     <div className="card w-72 md:w-96 bg-white shadow-xl">
       <figure className="px-5 pt-10">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+        <Image
+          src={UserImg}
           alt="member"
+          className="w-full"
+          width={100}
+          height={100}
         />
       </figure>
       <div className="card-body text-black items-center text-center">

@@ -25,7 +25,7 @@ const ProductFeatures = () => {
           </Link>
         </section>
         <section className=" flex flex-col justify-center gap-5 lg:gap-10 items-center">
-          <h1 className=" text-black text-3xl lg:text-5xl font-bold ">
+          <h1 className=" text-black font-bold text-center text-2xl lg:text-5xl">
             Core Capabilities
           </h1>
           <ul className="flex flex-col lg:flex-row gap-3 lg:gap-6 p-6 lg:p-12 ">

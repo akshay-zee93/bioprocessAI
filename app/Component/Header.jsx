@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import NavBar from "./NavBar";
-import Link from "next/link";
+import Image from "next/image";
+import LogoImage from "../../public/logo.png";
 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -86,6 +87,7 @@ const Header = () => {
             </div>
           )}
         </div>
+        {/* <Image src={LogoImage} className=" " /> */}
         <p className="text-teal-100 text-3xl lg:text-4xl font-dongle">
           BioProcessAi
         </p>
@@ -93,21 +95,6 @@ const Header = () => {
       <div className="navbar-end flex gap-4 lg:gap-8 items-center w-full">
         <div className="navbar-end hidden lg:flex">
           <NavBar />
-        </div>
-        <div className="flex navbar-end gap-2 lg:gap-4 items-center w-full lg:w-auto">
-          <Link
-            href="https://www.bioprocessai.com/bioprocessaiplatform"
-            target="_blank"
-            className="bg-teal-100 hover:bg-teal-100 border-teal-100 text-white btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2 rounded-sm  lg:text-sm font-semibold"
-          >
-            Platform
-          </Link>
-          <Link
-            className="btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2 rounded-sm  lg:text-sm font-semibold text-teal-100 border-teal-100 hover:bg-white bg-white"
-            href="/contact-us"
-          >
-            Contact Us
-          </Link>
         </div>
       </div>
     </header>
