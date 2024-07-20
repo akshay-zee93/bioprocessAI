@@ -25,10 +25,10 @@ export const teamsList = [
           University, New York, NY.
         </p>
         <p>
-          BioProcess.AI was born from Samir's vision to revolutionize biotech
-          manufacturing processes. His deep understanding of the industry and
-          commitment to innovation have been instrumental in developing
-          BioProcess.AI's cutting-edge solutions.
+          BioProcess.AI was born from Samir&lsquo;s vision to revolutionize
+          biotech manufacturing processes. His deep understanding of the
+          industry and commitment to innovation have been instrumental in
+          developing BioProcess.AI&lsquo;s cutting-edge solutions.
         </p>
       </>
     ),
@@ -50,14 +50,14 @@ export const teamsList = [
         </p>
 
         <p>
-          Hari holds a Master's and Bachelor's degree in Computer Science from
-          the University of Pune.
+          Hari holds a Master&lsquo;s and Bachelor&lsquo;s degree in Computer
+          Science from the University of Pune.
         </p>
 
         <p>
           Renowned for his ability to take products from concept to
           multi-million dollar ARR, Hari Menon is a pivotal force behind
-          BioProcess.AI's success.
+          BioProcess.AI&lsquo;s success.
         </p>
       </>
     ),
