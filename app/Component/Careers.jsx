@@ -1,7 +1,7 @@
 const Careers = () => {
   return (
     <>
-      <h2 className="text-black text-3xl lg:text-5xl font-bold  text-center">
+      <h2 className="text-black text-xl lg:text-3xl font-semibold  text-center">
         Careers
       </h2>
     </>

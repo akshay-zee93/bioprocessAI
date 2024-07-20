@@ -8,13 +8,13 @@ const NavBar = () => {
     setActiveTab(text);
   };
   return (
-    <nav className=" flex flex-col lg:flex-row justify-evenly menu menu-horizontal gap-4 lg:gap-8 text-xs lg:text-sm px-1">
+    <nav className=" flex flex-col lg:flex-row  menu menu-horizontal gap-2 md:gap-4 text-xs md:text-sm px-1">
       <Link
         className={` font-semibold   ${
-          activeTab === "Home" ? "text-teal-100" : " text-black"
+          activeTab === "" ? "text-teal-100" : " text-black"
         }`}
         href={"/"}
-        onClick={() => activeLinkHandler("Home")}
+        onClick={() => activeLinkHandler("")}
       >
         Home
       </Link>

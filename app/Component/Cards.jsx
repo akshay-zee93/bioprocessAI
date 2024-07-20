@@ -2,78 +2,80 @@
 import Image from "next/image";
 import Link from "next/link";
 import UserImg from "../../public/users.jpg";
+import { useState } from "react";
+import Button from "../BasicElements/Button";
 
 const Cards = ({ data }) => {
   const {
     title = "",
     role = "",
-    facebook = "",
-    instagram = "",
+    img = null,
+    bio = null,
+    linkedin = "",
     youtube = "",
   } = data;
+  const [viewMore, setViewMore] = useState(false);
   return (
-    <div className="card w-72 md:w-96 bg-white shadow-xl">
-      <figure className="px-5 pt-10">
-        <Image
-          src={UserImg}
-          alt="member"
-          className="w-full"
-          width={100}
-          height={100}
-        />
+    <div className="card w-72 md:w-96   bg-white shadow-xl">
+      <figure className="px-4 pt-10">
+        <Image src={img === null ? UserImg : img} alt="member" width={280} />
       </figure>
-      <div className="card-body text-black items-center text-center">
-        <h2 className="card-title">{title}</h2>
-        <p>{role}</p>
-        <div className="card-actions">
-          <nav>
-            <div className="grid grid-flow-col gap-4">
-              <Link
-                href={instagram}
-                className=" border-2 border-teal-100 p-2 text-teal-100 rounded-full"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  width="24px"
-                  height="24px"
+      {!viewMore ? (
+        <div className="card-body text-black items-center text-center">
+          <h2 className="card-title">{title}</h2>
+          <p>{role}</p>
+
+          <div className="card-actions">
+            <nav>
+              <div className="grid grid-flow-col gap-4">
+                <Link
+                  href={`https://www.youtube.com/${youtube}`}
+                  target="_blank"
+                  className=" border-2 border-teal-100 p-2 text-teal-100 rounded-full"
                 >
-                  <path d="M7.75 2H16.25C20.35 2 23 4.65 23 8.75V15.25C23 19.35 20.35 22 16.25 22H7.75C3.65 22 1 19.35 1 15.25V8.75C1 4.65 3.65 2 7.75 2ZM7.5 4C5.01 4 3 6.01 3 8.5V15.5C3 17.99 5.01 20 7.5 20H16.5C18.99 20 21 17.99 21 15.5V8.5C21 6.01 18.99 4 16.5 4H7.5ZM12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7ZM12 9C13.66 9 15 10.34 15 12C15 13.66 13.66 15 12 15C10.34 15 9 13.66 9 12C9 10.34 10.34 9 12 9ZM18.5 6.5C18.78 6.5 19 6.72 19 7C19 7.28 18.78 7.5 18.5 7.5H18.48C18.2 7.5 18 7.28 18 7C18 6.72 18.2 6.5 18.48 6.5H18.5Z" />
-                </svg>
-              </Link>
-              <Link
-                href={youtube}
-                className=" border-2 border-teal-100 p-2 text-teal-100 rounded-full"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    className="fill-current"
+                  >
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                  </svg>
+                </Link>
+                <Link
+                  href={`https://www.linkedin.com/${linkedin}`}
+                  target="_blank"
+                  className=" border-2 border-teal-100 p-2 text-teal-100 rounded-full"
                 >
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
-              </Link>
-              <Link
-                href={facebook}
-                className=" border-2 border-teal-100 p-2 text-teal-100 rounded-full"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                </svg>
-              </Link>
-            </div>
-          </nav>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    className="fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z"
+                      className="fill-current"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
+      ) : (
+        <section className="card-body items-center text-xs  text-gray-500 flex gap-2 flex-col">
+          {bio}
+        </section>
+      )}
+      <Button
+        onClick={() => setViewMore((prev) => !prev)}
+        className="border-teal-100 mx-2 my-1 rounded-lg text-teal-100 hover:bg-transparent bg-white"
+      >
+        {!viewMore ? "View More" : "View Less"}
+      </Button>
     </div>
   );
 };

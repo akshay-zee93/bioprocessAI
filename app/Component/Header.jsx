@@ -2,7 +2,9 @@
 import { useState, useEffect, useRef } from "react";
 import NavBar from "./NavBar";
 import Image from "next/image";
-import LogoImage from "../../public/logo.png";
+import LogoImage from "../../public/logo.jpeg";
+import Config from "../../config.json";
+import Link from "next/link";
 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -35,9 +37,21 @@ const Header = () => {
   }, [isDropdownOpen]);
 
   return (
-    <header className="navbar lg:px-12 px-2 py-7 w-full border-b">
+    <header className="navbar md:px-12 px-2 py-7 w-full border-b">
       <div className="navbar-start">
-        <div className="dropdown" ref={dropdownRef}>
+        <Link href={"/"} className="flex items-center gap-2">
+          <Image
+            src={LogoImage}
+            className="  border-2 rounded-2xl"
+            width={100}
+          />
+          <p className="text-teal-100 text-3xl md:text-4xl font-dongle">
+            {Config.appName}
+          </p>
+        </Link>
+      </div>
+      <div className="navbar-end flex gap-4 lg:gap-8 items-center w-full">
+        <div className="dropdown dropdown-end" ref={dropdownRef}>
           <div
             tabIndex={0}
             role="button"
@@ -80,19 +94,13 @@ const Header = () => {
             <div
               tabIndex={0}
               role="button"
-              className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-md  dropdown-content bg-white w-48  rounded-box z-[1] mt-3 p-2 shadow"
               onClick={closeDropdown}
             >
               <NavBar />
             </div>
           )}
         </div>
-        {/* <Image src={LogoImage} className=" " /> */}
-        <p className="text-teal-100 text-3xl lg:text-4xl font-dongle">
-          BioProcessAi
-        </p>
-      </div>
-      <div className="navbar-end flex gap-4 lg:gap-8 items-center w-full">
         <div className="navbar-end hidden lg:flex">
           <NavBar />
         </div>

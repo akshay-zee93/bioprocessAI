@@ -1,14 +1,10 @@
-import BackgroundImg from "../../public/Background.svg";
-import Teams from "../Component/Team";
-import Advisors from "../Component/Advisors";
-import Careers from "../Component/Careers";
+import Teams from "../../Component/Team";
+import Advisors from "../../Component/Advisors";
+import Careers from "../../Component/Careers";
 
 const page = () => {
   return (
-    <article
-      style={{ backgroundImage: `url(${BackgroundImg.src})` }}
-      className=" w-screen bg-cover  bg-no-repeat bg-top  min-h-dvh  flex flex-col px-10  text-black gap-8  "
-    >
+    <article className="  flex flex-col px-10  text-black gap-8  ">
       <h1 className="text-black text-center text-3xl lg:text-5xl font-bold py-10">
         About BioProcessAi
       </h1>

@@ -1,50 +1,66 @@
+import HariImg from "../../public/hari.jpeg";
 export const teamsList = [
   {
     title: "Samir Varma",
     role: "Co Founder",
-    facebook: "",
-    instagram: "",
+    img: null,
+    linkedin: "",
     youtube: "",
+    bio: (
+      <>
+        <p>
+          Samir has extensive bioprocess experience, working at various large
+          and small pharma and biotech companies, including Nutcracker
+          Therapeutics, Allakos Inc., Enzene Biosciences, and Bristol Myers
+          Squibb. He has expertise in drug substance and drug product
+          manufacturing, GMP facility design, and supply chain operations. Samir
+          has worked on various commercial molecules such as Yervoy®, Orencia®,
+          Nulojix®, and Reblozyl®.
+        </p>
+        <p>
+          Samir was awarded a BE in Chemical Engineering from the National
+          Institute of Technology, Karnataka, India, an MS in Biochemical
+          Engineering from Drexel University, Philadelphia, PA, and an MBA in
+          Finance and Marketing from the Stern School of Business at New York
+          University, New York, NY.
+        </p>
+        <p>
+          BioProcess.AI was born from Samir's vision to revolutionize biotech
+          manufacturing processes. His deep understanding of the industry and
+          commitment to innovation have been instrumental in developing
+          BioProcess.AI's cutting-edge solutions.
+        </p>
+      </>
+    ),
   },
   {
-    title: "Samir Varma",
+    title: "Hari Menon",
     role: "Co Founder",
+    img: HariImg,
     facebook: "",
-    instagram: "",
-    youtube: "",
-  },
-  {
-    title: "Samir Varma",
-    role: "Co Founder",
-    facebook: "",
-    instagram: "",
-    youtube: "",
-  },
-  {
-    title: "Samir Varma",
-    role: "Co Founder",
-    facebook: "",
-    instagram: "",
-    youtube: "",
-  },
-  {
-    title: "Samir Varma",
-    role: "Co Founder",
-    facebook: "",
-    instagram: "",
-    youtube: "",
-  },
-  {
-    title: "Samir Varma",
-    role: "Co Founder",
-    facebook: "",
-    instagram: "",
-    youtube: "",
-  },
-  {
-    title: "Samir Varma",
-    role: "Co Founder",
-    facebook: "",
+    bio: (
+      <>
+        <p>
+          Hari brings over 25 years of experience in software development and
+          technology leadership, with a proven track record of delivering
+          innovative AI/ML-based SaaS solutions across multiple industries. He
+          has held key roles at Oracle, GE Digital, and BlackBerry, where he led
+          cross-functional teams and drove technological innovation and business
+          growth.
+        </p>
+
+        <p>
+          Hari holds a Master's and Bachelor's degree in Computer Science from
+          the University of Pune.
+        </p>
+
+        <p>
+          Renowned for his ability to take products from concept to
+          multi-million dollar ARR, Hari Menon is a pivotal force behind
+          BioProcess.AI's success.
+        </p>
+      </>
+    ),
     instagram: "",
     youtube: "",
   },
