@@ -7,10 +7,16 @@ const Footer = () => {
   return (
     <footer className="footer bg-teal-100  text-blue-gray-200 p-10">
       <aside>
-        <Image src={LogoImage} className="  border-2 rounded-2xl" width={100} />
-        <p className="text-white text-3xl lg:text-5xl font-dongle">
-          {Config.appName}
-        </p>
+        <Link href={"/"}>
+          <Image
+            src={LogoImage}
+            className="  border-2 rounded-2xl"
+            width={100}
+          />
+          <p className="text-white text-3xl lg:text-5xl font-dongle">
+            {Config.appName}
+          </p>
+        </Link>
       </aside>
       <nav>
         <h6 className=" mb-2 font-semibold">Company</h6>
