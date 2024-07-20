@@ -2,7 +2,7 @@ import config from "../../../config.json";
 
 const TermsOfUse = () => {
   return (
-    <ul className="bg-white h-screen  p-8 text-black">
+    <ul className="bg-white   p-8 text-black">
       <li className=" flex flex-col pt-2 gap-1">
         <h1 className=" font-semibold text-lg text-gray-700 ">Terms of Use</h1>
         <p className=" font-normal text-gray-500 ">
@@ -12,11 +12,14 @@ const TermsOfUse = () => {
       </li>
       <li className=" flex flex-col pt-2 gap-1">
         <h1 className=" font-semibold text-lg text-gray-700 ">Use License</h1>
-        <p className=" font-normal text-gray-500 ">
-          Permission is granted to temporarily download one copy of the
-          materials on {config.appName}.in&lsquo;s website for personal,
-          non-commercial transitory viewing only. This is the grant of a
-          license, not a transfer of title, and under this license, you may not:
+        <div className=" font-normal text-gray-500 ">
+          <p>
+            Permission is granted to temporarily download one copy of the
+            materials on {config.appName}.in&lsquo;s website for personal,
+            non-commercial transitory viewing only. This is the grant of a
+            license, not a transfer of title, and under this license, you may
+            not:
+          </p>
           <ul className=" list-disc ">
             <li className="">Modify or copy the materials;</li>
             <li>
@@ -34,7 +37,7 @@ const TermsOfUse = () => {
           </ul>
           This license shall automatically terminate if you violate any of these
           restrictions and may be terminated by {config.appName}.in at any time.
-        </p>
+        </div>
       </li>
       <li className=" flex flex-col pt-2 gap-1">
         <h1 className=" font-semibold text-lg text-gray-700 ">Disclaimer</h1>
