@@ -1,13 +1,14 @@
 import Image from "next/image";
 import VideoImg from "../../public/Videodemo.svg";
 import Link from "next/link";
+import config from "../../config.json";
 
 const ProductFeatures = () => {
   return (
     <article className=" w-full  bg-white pt-12 lg:pt-24 ">
       <header className=" flex flex-col gap-2 items-center ">
         <h1 className="  text-black font-bold text-center text-2xl lg:text-5xl">
-          Unleash the Power of BioprocessAI
+          Unleash the Power of {config.appName}
         </h1>
         <h3 className=" text-neutral-500   font-normal text-lg lg:text-3xl">
           Any Modality, Any Scale, Powered by AI

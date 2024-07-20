@@ -1,11 +1,13 @@
+import config from "../../../config.json";
+
 const PrivacyPolicy = () => {
   return (
     <ul className="bg-white h-screen  p-8 text-black">
       <li className=" flex flex-col pt-2 gap-1">
         <h1 className="text-xl pb-2">Privacy Policy</h1>
         <p className=" font-normal text-gray-500 ">
-          Welcome to BioprocessAI. This privacy policy outlines how we handle
-          your personal information.
+          Welcome to {config.appName}. This privacy policy outlines how we
+          handle your personal information.
         </p>
       </li>
       <li className=" flex flex-col pt-2 gap-1">
