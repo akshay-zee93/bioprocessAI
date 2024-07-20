@@ -1,12 +1,13 @@
 import Teams from "../../Component/Team";
 import Advisors from "../../Component/Advisors";
 import Careers from "../../Component/Careers";
+import config from "../../../config.json";
 
 const page = () => {
   return (
     <article className="  flex flex-col px-10  text-black gap-8  ">
       <h1 className="text-black text-center text-3xl lg:text-5xl font-bold py-10">
-        About BioProcessAi
+        About {config.appName}
       </h1>
       {/* <section className=" flex flex-col h-full w-full gap-3 lg:gap-8">
         <header className=" flex text-xl md:text-3xl flex-col">
