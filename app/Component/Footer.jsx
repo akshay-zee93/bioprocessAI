@@ -11,7 +11,7 @@ const Footer = () => {
           <Image
             src={LogoImage}
             className="  border-2 rounded-2xl"
-            width={100}
+            width={50}
           />
           <p className="text-white text-3xl lg:text-5xl font-dongle">
             {Config.appName}

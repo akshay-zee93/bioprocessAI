@@ -39,11 +39,11 @@ const Header = () => {
   return (
     <header className="navbar md:px-12 px-2 py-7 w-full border-b">
       <div className="navbar-start">
-        <Link href={"/"} className="flex items-center gap-2">
+        <Link href={"/"} className="flex items-center cursor-pointer gap-2">
           <Image
             src={LogoImage}
             className="  border-2 rounded-2xl"
-            width={100}
+            width={50}
           />
           <p className="text-teal-100 text-3xl md:text-4xl font-dongle">
             {Config.appName}

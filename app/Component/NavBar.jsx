@@ -37,8 +37,7 @@ const NavBar = () => {
         FAQs
       </Link> */}
       <Link
-        href="https://www.bioprocessai.com/bioprocessaiplatform"
-        target="_blank"
+        href="https://platform.bioprocess.ai/"
         className={` font-semibold   ${
           activeTab === "Platform" ? "text-teal-100" : " text-black"
         }`}
