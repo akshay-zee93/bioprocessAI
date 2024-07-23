@@ -1,5 +1,6 @@
 import { Dongle, Poppins } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const dongle = Dongle({
   weight: "700",
@@ -22,6 +23,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.className} ${dongle.variable}`}>
         {children}
+        <Toaster
+          toastOptions={{
+            duration: 5000,
+          }}
+        />
       </body>
     </html>
   );

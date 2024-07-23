@@ -7,6 +7,7 @@ import BackgroundImg from "../../public/Background.svg";
 import { contactDetails } from "../actions/contactusActions";
 import { useRouter } from "next/navigation";
 import { demoDetails } from "../actions/demoAction";
+import { toast } from "react-hot-toast";
 
 const ContactUs = ({ title, displayAllFields = false }) => {
   const route = useRouter();
@@ -42,11 +43,17 @@ const ContactUs = ({ title, displayAllFields = false }) => {
     if (displayAllFields) {
       const status = await contactDetails(data);
       if (status === 201) {
+        toast.success(
+          "Thank you for contacting us. We'll get back to you soon. "
+        );
         route.push("/");
       }
     } else {
       const status = await demoDetails(data);
       if (status === 201) {
+        toast.success(
+          "Thank you for contacting us. We'll get back to you soon. "
+        );
         route.push("/");
       }
     }
