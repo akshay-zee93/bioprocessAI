@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import BannerLogo from "../../public/medical-banner-with-doctor-wearing-goggles 1.svg";
 import Link from "next/link";
+import Config from "../../config.json";
 
 const Introduction = () => {
   return (
@@ -9,12 +10,7 @@ const Introduction = () => {
       <div className="card-body md:gap-10 ">
         <h2 className=" font-bold text-xl lg:text-3xl">About Us</h2>
         <p className=" font-normal text-sm md:w-[300px] lg:w-[450px] xl:w-[612px] lg:text-xl text-neutral-500">
-          At Bioprocess AI, we're committed to helping you achieve your
-          bioprocess development goals. Our platform is designed with your needs
-          in mind, and we're constantly working to improve our technology to
-          meet the evolving needs of the bioprocess industry. With Bioprocess
-          AI, you can trust that you're getting the most advanced bioprocess
-          development tools available.
+          {Config.about}
         </p>
         <Link
           href="/contact-for-demo"
