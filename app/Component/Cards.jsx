@@ -16,8 +16,8 @@ const Cards = ({ data }) => {
   } = data;
   const [viewMore, setViewMore] = useState(false);
   return (
-    <div className="card w-72 md:w-96   bg-white shadow-xl">
-      <figure className="px-2 md:px-4 pt-10">
+    <div className="card w-72 md:w-96 bg-white shadow-xl">
+      <figure className="px-2 w-full md:px-4 pt-10">
         <Image
           src={img === null ? UserImg : img}
           alt="member"
