@@ -1,28 +1,22 @@
-"use client";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
-  const [activeTab, setActiveTab] = useState("Home");
-  const activeLinkHandler = (text) => {
-    setActiveTab(text);
-  };
+  const pathname = usePathname();
   return (
-    <nav className=" flex flex-col lg:flex-row  menu menu-horizontal gap-2 md:gap-4 text-xs md:text-sm px-1">
+    <nav className=" flex flex-col lg:items-center lg:flex-row  gap-3 lg:gap-10 text-xs md:text-sm px-1">
       <Link
-        className={` font-semibold   ${
-          activeTab === "" ? "text-teal-100" : " text-black"
+        className={` font-semibold  ${
+          pathname === "/" ? "text-teal-100" : "text-black"
         }`}
         href={"/"}
-        onClick={() => activeLinkHandler("")}
       >
         Home
       </Link>
       <Link
-        className={` font-semibold   ${
-          activeTab === "About Us" ? "text-teal-100" : " text-black"
+        className={` font-semibold text-nowrap  ${
+          pathname === "/about" ? "text-teal-100" : "text-black"
         }`}
-        onClick={() => activeLinkHandler("About Us")}
         href={"/about"}
       >
         About Us
@@ -38,18 +32,12 @@ const NavBar = () => {
       </Link> */}
       <Link
         href="https://platform.bioprocess.ai/"
-        className={` font-semibold   ${
-          activeTab === "Platform" ? "text-teal-100" : " text-black"
-        }`}
-        onClick={() => activeLinkHandler("Platform")}
+        className=" lg:w-fit btn hover:shadow-2xl h-8 min-h-8 lg:h-12 lg:min-h-12 box-border  px-2 md:px-4  rounded-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
       >
         Platform
       </Link>
       <Link
-        className={` font-semibold   ${
-          activeTab === "Contact" ? "text-teal-100" : " text-black"
-        }`}
-        onClick={() => activeLinkHandler("Contact")}
+        className=" lg:w-fit btn h-8 min-h-8 lg:h-12 lg:min-h-12 hover:shadow-2xl box-border  px-2 md:px-4  rounded-sm font-semibold   text-teal-100 hover:bg-white bg-white border-teal-100"
         href="/contact-us"
       >
         Contact Us

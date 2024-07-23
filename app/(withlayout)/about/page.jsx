@@ -2,10 +2,11 @@ import Teams from "../../Component/Team";
 import Advisors from "../../Component/Advisors";
 import Careers from "../../Component/Careers";
 import config from "../../../config.json";
+import Introduction from "../../Component/Introduction";
 
 const page = () => {
   return (
-    <article className="  flex flex-col px-10  text-black gap-8  ">
+    <article className="  flex flex-col px-4 md:px-10  text-black gap-8  ">
       <h1 className="text-black text-center text-3xl lg:text-5xl font-bold py-10">
         About {config.appName}
       </h1>
@@ -33,6 +34,7 @@ const page = () => {
           </p>
         </main>
       </section> */}
+      <Introduction />
       <section className=" px-2 md:px-10 py-10 bg-slate-100">
         <Teams />
       </section>

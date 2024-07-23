@@ -20,12 +20,12 @@ const Hero = () => {
         </p>
       </div>
       <div className=" flex gap-6">
-        <Button className="text-base text-white hover:bg-teal-100 border-teal-100 bg-teal-100">
+        <Button className="text-base text-white h-8 min-h-8 lg:h-12 lg:min-h-12 hover:bg-teal-100 border-teal-100 bg-teal-100">
           <p>Get Started</p>
         </Button>
         <Link
           href="/contact-for-demo"
-          className=" btn bg-white text-teal-100 hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm hover:bg-white  lg:text-sm font-semibold"
+          className=" btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2 bg-white hover:bg-white border-teal-100 text-teal-100  rounded-sm  lg:text-sm font-semibold"
         >
           <p>Request Demo</p>
         </Link>

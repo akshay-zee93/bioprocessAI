@@ -16,11 +16,15 @@ const ProductFeatures = () => {
       </header>
       <main className=" flex flex-col gap-6 lg:gap-12">
         <section className=" flex flex-col justify-center py-5 lg:py-10 items-center gap-6">
-          <Image className=" h-auto w-auto" src={VideoImg} />
+          <Image
+            alt="video placeholder"
+            className=" h-auto w-auto"
+            src={VideoImg}
+          />
 
           <Link
             href="/contact-for-demo"
-            className="text-base btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12  px-2  rounded-sm  lg:text-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
+            className="text-sm md:text-base w-fit btn hover:shadow-2xl box-border   px-2 md:px-4  rounded-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
           >
             <p>Request Demo</p>
           </Link>

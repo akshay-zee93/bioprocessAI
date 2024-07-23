@@ -27,7 +27,7 @@ export default async function Home() {
       </section>
       <div
         style={{ backgroundImage: `url(${LockImg.src})` }}
-        className="w-full bg-center bg-no-repeat text-xl lg:text-3xl   bg-slate-800 py-10 text-white flex-col justify-center items-center gap-12 inline-flex"
+        className="w-full bg-center bg-no-repeat text-base lg:text-3xl   bg-slate-800 py-10 text-white flex-col justify-center items-center gap-12 inline-flex"
       >
         <p>Unlock the power of {config.appName} now !</p>
         <Link

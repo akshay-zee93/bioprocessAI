@@ -1,18 +1,14 @@
 import Link from "next/link";
 import Config from "../../config.json";
 import Image from "next/image";
-import LogoImage from "../../public/logo.jpeg";
+import LogoImage from "../../public/Bioprocess alternate logo.svg";
 
 const Footer = () => {
   return (
     <footer className="footer bg-teal-100  text-blue-gray-200 p-10">
       <aside>
         <Link href={"/"}>
-          <Image
-            src={LogoImage}
-            className="  border-2 rounded-2xl"
-            width={50}
-          />
+          <Image src={LogoImage} alt="logo" className="" width={50} />
           <p className="text-white text-3xl lg:text-5xl font-dongle">
             {Config.appName}
           </p>

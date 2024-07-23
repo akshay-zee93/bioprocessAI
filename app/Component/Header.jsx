@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import NavBar from "./NavBar";
 import Image from "next/image";
-import LogoImage from "../../public/logo.jpeg";
+import LogoImage from "../../public/Bioprocess alternate logo.svg";
 import Config from "../../config.json";
 import Link from "next/link";
 
@@ -40,11 +40,7 @@ const Header = () => {
     <header className="navbar md:px-12 px-2 py-7 w-full border-b">
       <div className="navbar-start">
         <Link href={"/"} className="flex items-center cursor-pointer gap-2">
-          <Image
-            src={LogoImage}
-            className="  border-2 rounded-2xl"
-            width={50}
-          />
+          <Image src={LogoImage} alt="logo" className="  " width={50} />
           <p className="text-teal-100 text-3xl md:text-4xl font-dongle">
             {Config.appName}
           </p>
