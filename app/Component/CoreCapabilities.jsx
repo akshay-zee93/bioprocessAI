@@ -6,7 +6,7 @@ import Link from "next/link";
 const CoreCapabilities = () => {
   return (
     <section className="flex flex-col gap-7">
-      <h2 className="text-black text-xl lg:text-3xl font-semibold  text-center">
+      <h2 className="text-black text-2xl lg:text-5xl font-bold  text-center">
         Core Capabilities
       </h2>
       <ul className="flex flex-col lg:flex-row gap-5 w-full">
