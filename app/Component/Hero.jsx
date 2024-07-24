@@ -14,7 +14,7 @@ const Hero = () => {
             <p>{"Accelerate Your Journey"}</p>
           </h1>
         </div>
-        <div className="  text-neutral-500 hidden lg:block  text-xl  font-normal">
+        <div className="  text-neutral-500 hidden lg:block  lg:text-xl  font-normal">
           <p>
             Bioprocess development, simplified. Our AI platform automates tasks
             and
@@ -24,7 +24,7 @@ const Hero = () => {
             market.
           </p>
         </div>
-        <div className="  text-neutral-500 lg:hidden md:w-3/4  text-xl  font-normal">
+        <div className="  text-neutral-500 lg:hidden md:w-3/4  lg:text-xl  font-normal">
           <p>
             Bioprocess development, simplified. Our AI platform automates tasks
             and empowers informed decisions, accelerating your path from bench
