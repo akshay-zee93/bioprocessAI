@@ -6,6 +6,7 @@ import ProductFeatures from "../Component/ProductFeatures";
 import Link from "next/link";
 import Testimonials from "../Component/Testimonial";
 import config from "../../config.json";
+import CoreCapabilities from "../Component/CoreCapabilities";
 
 export default async function Home() {
   return (
@@ -21,6 +22,9 @@ export default async function Home() {
       </main>
 
       <ProductFeatures />
+      <section className=" px-2 md:px-5 py-10 bg-gray-100">
+        <CoreCapabilities />
+      </section>
 
       <section className=" px-2 md:px-5 py-10 bg-slate-200">
         <Testimonials />

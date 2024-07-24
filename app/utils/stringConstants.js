@@ -1,4 +1,8 @@
 import HariImg from "../../public/hari.jpeg";
+import CopilotLogo from "../../public/coPilot.svg";
+import GPTLogo from "../../public/gptLogo.svg";
+import RegGuideLogo from "../../public/RegGuide.svg";
+import ModalityLogo from "../../public/multiModality.svg";
 export const teamsList = [
   {
     title: "Samir Varma",
@@ -82,5 +86,28 @@ export const testimonialList = [
   {
     name: "Manager, Biotech Company",
     text: "This AI based solution for Bioprocessing is an excellent platform and I see an immense potential in developing it, catering to the bioprocessing community and manufacturers",
+  },
+];
+
+export const capabilities = [
+  {
+    logo: GPTLogo,
+    title: "Bioprocess GPT",
+    text: "A ChatGPT-style interface enriched with extensive, current bioprocessing knowledge. Ask in-depth questions about any CMC topic and receive detailed, insightful answers with relevant literature references.",
+  },
+  {
+    logo: CopilotLogo,
+    title: "CMC CoPilot",
+    text: "Design and iterate experiments more efficiently, significantly reducing development time. Leverage advanced statistical and visualization tools to drive informed, data-driven decisions.",
+  },
+  {
+    logo: RegGuideLogo,
+    title: "RegGuide",
+    text: "Save valuable time and resources using the AI-powered document generator to effortlessly create high-quality protocols, reports, and presentations for Tech Transfer, Audits, and CMC regulatory submissions.",
+  },
+  {
+    logo: ModalityLogo,
+    title: "Multi-Modality",
+    text: "Develop cutting-edge therapies across all leading biological modalities with support for mAbs, bispecific antibodies, fragment antibodies (fAbs), cell and gene therapies, and mRNA products.",
   },
 ];
