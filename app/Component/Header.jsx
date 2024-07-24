@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import NavBar from "./NavBar";
 import Image from "next/image";
-import LogoImage from "../../public/Bioprocess alternate logo.svg";
+import LogoImage from "../../public/Bioprocess logo.svg";
 import Config from "../../config.json";
 import Link from "next/link";
 
@@ -39,8 +39,8 @@ const Header = () => {
   return (
     <header className="navbar md:px-12 px-2 py-7 w-full border-b">
       <div className="navbar-start">
-        <Link href={"/"} className="flex items-center cursor-pointer gap-2">
-          <Image src={LogoImage} alt="logo" className="  " width={50} />
+        <Link href={"/"} className="flex  cursor-pointer gap-2">
+          <Image src={LogoImage} alt="logo" className=" h-full " width={30} />
           <p className="text-teal-100 text-3xl md:text-4xl font-dongle">
             {Config.appName}
           </p>
@@ -57,17 +57,16 @@ const Header = () => {
             {!isDropdownOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                className="inline-block h-5 w-5 stroke-current"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
               </svg>
             ) : (
               <svg

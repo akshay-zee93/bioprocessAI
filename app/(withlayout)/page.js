@@ -36,7 +36,7 @@ export default async function Home() {
         <p>Unlock the power of {config.appName} now !</p>
         <Link
           href="/contact-us"
-          className=" hover:bg-teal-100  bg-teal-100 btn hover:shadow-2xl box-border h-8 min-h-8 lg:h-12 lg:min-h-12 text-xs px-2  rounded-sm  lg:text-sm font-semibold border-teal-100 text-white "
+          className=" hover:bg-teal-100  bg-teal-100 btn hover:shadow-2xl box-border  text-xs  lg:w-[170px] h-11  rounded-sm  lg:text-sm font-semibold border-teal-100 text-white "
         >
           <p>Contact Us</p>
         </Link>

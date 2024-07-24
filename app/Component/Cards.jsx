@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import UserImg from "../../public/users.jpg";
+import UserImg from "../../public/Avatar.jpeg";
 import { useState } from "react";
-import Button from "../BasicElements/Button";
-
 const Cards = ({ data }) => {
   const {
     title = "",
@@ -16,15 +14,19 @@ const Cards = ({ data }) => {
   } = data;
   const [viewMore, setViewMore] = useState(false);
   return (
-    <div className="card w-72 md:w-96 bg-white shadow-xl">
-      <figure className="px-2 w-full md:px-4 pt-10">
-        <Image
-          src={img === null ? UserImg : img}
-          alt="member"
-          className="h-full w-full"
-          width={100}
-        />
-      </figure>
+    <div className={`card w-72   md:w-96 bg-white shadow-xl`}>
+      <Image
+        src={img === null ? UserImg : img}
+        alt="member"
+        onClick={() => setViewMore((prev) => !prev)}
+        className="px-2  cursor-pointer md:px-4 pt-10"
+        width={300}
+        height={305}
+        quality={75}
+        priority
+        layout="responsive"
+      />
+
       {!viewMore ? (
         <div className="card-body text-black items-center text-center">
           <h2 className="card-title">{title}</h2>
@@ -75,12 +77,6 @@ const Cards = ({ data }) => {
           {bio}
         </section>
       )}
-      <Button
-        onClick={() => setViewMore((prev) => !prev)}
-        className="border-teal-100 mx-2 my-1 rounded-lg text-teal-100 hover:bg-transparent bg-white"
-      >
-        {!viewMore ? "View More" : "View Less"}
-      </Button>
     </div>
   );
 };

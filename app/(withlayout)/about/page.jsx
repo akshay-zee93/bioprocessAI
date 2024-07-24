@@ -7,9 +7,6 @@ import Introduction from "../../Component/Introduction";
 const page = () => {
   return (
     <article className="  flex flex-col px-4 md:px-10  text-black gap-8  ">
-      <h1 className="text-black text-center text-3xl lg:text-5xl font-bold py-10">
-        About {config.appName}
-      </h1>
       {/* <section className=" flex flex-col h-full w-full gap-3 lg:gap-8">
         <header className=" flex text-xl md:text-3xl flex-col">
           <h3 className="  font-semibold">Samir Varma</h3>
@@ -34,7 +31,9 @@ const page = () => {
           </p>
         </main>
       </section> */}
-      <Introduction />
+      <section className="py-10 ">
+        <Introduction />
+      </section>
       <section className=" px-2 md:px-10 py-10 bg-slate-100">
         <Teams />
       </section>

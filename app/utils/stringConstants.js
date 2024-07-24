@@ -6,7 +6,7 @@ import ModalityLogo from "../../public/multiModality.svg";
 export const teamsList = [
   {
     title: "Samir Varma",
-    role: "Co Founder",
+    role: "CEO/Co Founder",
     img: null,
     linkedin: "",
     youtube: "",
@@ -39,7 +39,7 @@ export const teamsList = [
   },
   {
     title: "Hari Menon",
-    role: "Co Founder",
+    role: "CTO/Co Founder",
     img: HariImg,
     facebook: "",
     bio: (

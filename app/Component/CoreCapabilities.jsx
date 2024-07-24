@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const CoreCapabilities = () => {
   return (
-    <section className="flex flex-col gap-7">
-      <h2 className="text-black text-2xl lg:text-5xl font-bold  text-center">
+    <section className="flex flex-col gap-6 lg:gap-12">
+      <h2 className="text-black text-xl lg:text-3xl font-bold  text-center">
         Core Capabilities
       </h2>
       <ul className="flex flex-col lg:flex-row gap-5 w-full">
@@ -20,8 +20,8 @@ const CoreCapabilities = () => {
       </ul>
       <div className="flex justify-center">
         <Link
-          href="/contact-for-demo"
-          className="text-sm md:text-base w-fit btn hover:shadow-2xl box-border  px-2 md:px-4  rounded-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
+          href="/contact-us"
+          className="text-sm md:text-base  btn w-36 lg:w-[170px] h-11 hover:shadow-2xl box-border rounded-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
         >
           <p>Know More</p>
         </Link>

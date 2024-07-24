@@ -24,9 +24,8 @@ module.exports = {
         poppins: ["var(--font-poppins)"],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "custom-gradient":
+          "linear-gradient(100.46deg, #FFFFFF 18%, #006F70 60.1%)",
       },
     },
   },

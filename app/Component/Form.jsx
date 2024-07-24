@@ -3,7 +3,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import BackgroundImg from "../../public/Background.svg";
+
 import { contactDetails } from "../actions/contactusActions";
 import { useRouter } from "next/navigation";
 import { demoDetails } from "../actions/demoAction";
@@ -60,10 +60,7 @@ const ContactUs = ({ title, displayAllFields = false }) => {
   };
 
   return (
-    <div
-      style={{ backgroundImage: `url(${BackgroundImg.src})` }}
-      className="flex flex-col gap-9  justify-center items-center min-h-screen  w-screen bg-cover  bg-no-repeat bg-top"
-    >
+    <div className="flex flex-col gap-9  justify-center items-center min-h-screen  w-screen bg-cover  bg-no-repeat bg-top">
       <h1 className=" text-2xl md:text-5xl font-semibold pt-4 text-black mb-4">
         {title}
       </h1>

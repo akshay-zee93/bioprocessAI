@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <footer className="footer bg-teal-100  text-blue-gray-200 p-10">
       <aside>
-        <Link href={"/"}>
-          <Image src={LogoImage} alt="logo" className="" width={50} />
-          <p className="text-white text-3xl lg:text-5xl font-dongle">
+        <Link href={"/"} className=" flex gap-2">
+          <Image src={LogoImage} alt="logo" className="h-full" width={30} />
+          <p className="text-white text-2xl lg:text-4xl font-dongle">
             {Config.appName}
           </p>
         </Link>
