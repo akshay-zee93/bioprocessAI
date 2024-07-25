@@ -31,7 +31,7 @@ const page = () => {
           </p>
         </main>
       </section> */}
-      <section className="py-10 ">
+      <section className="py-10 px-20 ">
         <Introduction />
       </section>
       <section className=" px-2 md:px-10 py-10 bg-slate-100">
