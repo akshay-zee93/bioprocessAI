@@ -33,12 +33,12 @@ const NavBar = () => {
       <div className="flex flex-col lg:flex-row gap-6">
         <Link
           href="https://platform.bioprocess.ai/"
-          className=" w-32 btn hover:shadow-2xl h-8 min-h-8   box-border  px-2 md:px-4  rounded-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
+          className=" w-full lg:w-32 btn hover:shadow-2xl h-8 min-h-8   box-border  px-2 md:px-4  rounded-sm font-semibold   bg-teal-100 hover:bg-teal-100 text-white border-teal-100"
         >
           Platform
         </Link>
         <Link
-          className=" w-32 btn h-8 min-h-8  hover:shadow-2xl box-border  px-2 md:px-4  rounded-sm font-semibold   text-teal-100 hover:bg-white bg-white border-teal-100"
+          className=" w-full lg:w-32 btn h-8 min-h-8  hover:shadow-2xl box-border  px-2 md:px-4  rounded-sm font-semibold   text-teal-100 hover:bg-white bg-white border-teal-100"
           href="/contact-us"
         >
           Contact Us
