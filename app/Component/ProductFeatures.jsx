@@ -1,7 +1,6 @@
-import Image from "next/image";
-import VideoImg from "../../public/Videodemo.svg";
 import Link from "next/link";
 import config from "../../config.json";
+import Player from "../Component/VideoPlayer";
 
 const ProductFeatures = () => {
   return (
@@ -16,11 +15,7 @@ const ProductFeatures = () => {
       </header>
       <main className=" flex flex-col gap-6 lg:gap-12">
         <section className=" flex flex-col justify-center py-5 lg:py-10 items-center gap-6">
-          <Image
-            alt="video placeholder"
-            className=" h-auto w-auto"
-            src={VideoImg}
-          />
+          <Player />
 
           <Link
             href="/contact-for-demo"
