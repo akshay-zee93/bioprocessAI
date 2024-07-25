@@ -89,7 +89,7 @@ const Header = () => {
             <div
               tabIndex={0}
               role="button"
-              className="menu menu-md  dropdown-content bg-white w-48  rounded-box z-[1] mt-3 p-2 shadow"
+              className="menu  dropdown-content bg-white w-60 md:w-80  rounded-box z-[1] mt-3 p-2 shadow"
               onClick={closeDropdown}
             >
               <NavBar />

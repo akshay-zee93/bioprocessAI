@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 const NavBar = () => {
   const pathname = usePathname();
   return (
-    <nav className=" flex flex-col lg:items-center lg:flex-row  gap-3 lg:gap-20 text-xs md:text-sm px-1">
+    <nav className=" flex flex-col lg:items-center lg:flex-row  gap-3 lg:gap-14 text-xs md:text-sm px-1">
       <Link
         className={` font-semibold  ${
           pathname === "/" ? "text-teal-800 font-bold" : "text-black"
