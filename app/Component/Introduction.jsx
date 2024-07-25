@@ -25,6 +25,7 @@ const Introduction = () => {
         height={518}
         quality={75}
         priority
+        className=" rounded-ee-2xl rounded-se-2xl"
         layout="responsive"
         alt="banner"
       />
