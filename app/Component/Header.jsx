@@ -51,7 +51,7 @@ const Header = () => {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost p-2 bg-transparent text-teal-100 lg:hidden"
+            className="btn btn-ghost p-2 bg-transparent text-white lg:hidden"
             onClick={toggleDropdown}
           >
             {!isDropdownOpen ? (
