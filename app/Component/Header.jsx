@@ -40,10 +40,8 @@ const Header = () => {
     <header className="navbar md:px-12 px-2 py-7 w-full border-b">
       <div className="navbar-start">
         <Link href={"/"} className="flex  cursor-pointer gap-2">
-          <Image src={LogoImage} alt="logo" className="h-full " width={36} />
-          <p className="text-teal-100 text-3xl md:text-4xl font-dongle">
-            {Config.appName}
-          </p>
+          <Image src={LogoImage} alt="logo" className="h-full " width={30} />
+          <p className="text-teal-100 text-3xl font-dongle">{Config.appName}</p>
         </Link>
       </div>
       <div className="navbar-end flex gap-4 lg:gap-8 items-center w-full">
