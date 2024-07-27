@@ -9,8 +9,8 @@ export const teamsList = [
     title: "Samir Varma",
     role: "CEO/Co Founder",
     img: SamirImg,
-    linkedin: "",
-    youtube: "",
+    linkedin: "in/samir-varma-1955992",
+    youtube: "@BioprocessAI",
     bio: (
       <>
         <p>
@@ -42,7 +42,6 @@ export const teamsList = [
     title: "Hari Menon",
     role: "CTO/Co Founder",
     img: HariImg,
-    facebook: "",
     bio: (
       <>
         <p>
@@ -66,8 +65,8 @@ export const teamsList = [
         </p>
       </>
     ),
-    instagram: "",
-    youtube: "",
+    linkedin: "in/hari-menon",
+    youtube: "@BioprocessAI",
   },
 ];
 

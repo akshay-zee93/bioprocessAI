@@ -33,9 +33,12 @@ const Hero = () => {
         </div>
       </div>
       <div className=" flex gap-6">
-        <Button className="text-base text-white w-36 lg:w-[170px] h-11  hover:bg-teal-100 border-teal-100 bg-teal-100">
+        <Link
+          href="https://platform.bioprocess.ai/"
+          className=" btn hover:shadow-2xl  box-border text-xs w-36 lg:w-[170px] h-11 bg-teal-100 hover:bg-teal-100 border-teal-100 text-white  rounded-sm  lg:text-sm font-semibold"
+        >
           <p>Get Started</p>
-        </Button>
+        </Link>
         <Link
           href="/contact-for-demo"
           className=" btn hover:shadow-2xl  box-border text-xs w-36 lg:w-[170px] h-11 bg-white hover:bg-white border-teal-100 text-teal-100  rounded-sm  lg:text-sm font-semibold"
