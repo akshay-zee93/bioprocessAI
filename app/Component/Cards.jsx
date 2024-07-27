@@ -34,7 +34,7 @@ const Cards = ({ data }) => {
         <h2 className="card-title">{title}</h2>
         <p>{role}</p>
         {viewMore && (
-          <section className="card-body items-center text-xs text-gray-500 flex gap-2 flex-col">
+          <section className="items-center text-xs text-gray-500 flex gap-2 flex-col">
             {bio}
           </section>
         )}
