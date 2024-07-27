@@ -1,4 +1,5 @@
 import HariImg from "../../public/hari.jpeg";
+import SamirImg from "../../public/samirimg.jpeg";
 import CopilotLogo from "../../public/coPilot.svg";
 import GPTLogo from "../../public/gptLogo.svg";
 import RegGuideLogo from "../../public/RegGuide.svg";
@@ -7,7 +8,7 @@ export const teamsList = [
   {
     title: "Samir Varma",
     role: "CEO/Co Founder",
-    img: null,
+    img: SamirImg,
     linkedin: "",
     youtube: "",
     bio: (

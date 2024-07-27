@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import UserImg from "../../public/Avatar.jpeg";
 import { useState } from "react";
+
 const Cards = ({ data }) => {
   const {
     title = "",
@@ -13,25 +14,27 @@ const Cards = ({ data }) => {
     youtube = "",
   } = data;
   const [viewMore, setViewMore] = useState(false);
+
   return (
-    <div className={`card w-72   md:w-96 bg-white shadow-xl`}>
-      <Image
-        src={img === null ? UserImg : img}
-        alt="member"
-        onClick={() => setViewMore((prev) => !prev)}
-        className="px-2  cursor-pointer md:px-4 pt-10"
-        width={300}
-        height={305}
-        quality={75}
-        priority
-        layout="responsive"
-      />
+    <div className="card w-72 md:w-96 bg-white shadow-xl">
+      <div className="relative w-full h-72 md:h-80">
+        <Image
+          src={img === null ? UserImg : img}
+          alt="member"
+          onClick={() => setViewMore((prev) => !prev)}
+          className="px-2  cursor-pointer md:px-4 pt-10"
+          layout="fill"
+          objectFit="cover"
+          quality={75}
+          priority
+        />
+      </div>
 
       <div className="card-body text-black items-center text-center">
         <h2 className="card-title">{title}</h2>
         <p>{role}</p>
         {viewMore && (
-          <section className="card-body items-center text-xs  text-gray-500 flex gap-2 flex-col">
+          <section className="card-body items-center text-xs text-gray-500 flex gap-2 flex-col">
             {bio}
           </section>
         )}
@@ -42,7 +45,7 @@ const Cards = ({ data }) => {
               <Link
                 href={`https://www.youtube.com/${youtube}`}
                 target="_blank"
-                className=" border-2 border-teal-100 p-2 text-teal-100 rounded-full"
+                className="border-2 border-teal-100 p-2 text-teal-100 rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +60,7 @@ const Cards = ({ data }) => {
               <Link
                 href={`https://www.linkedin.com/${linkedin}`}
                 target="_blank"
-                className=" border-2 border-teal-100 p-2 text-teal-100 rounded-full"
+                className="border-2 border-teal-100 p-2 text-teal-100 rounded-full"
               >
                 <svg
                   width="24"
